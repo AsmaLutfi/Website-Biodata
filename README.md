@@ -8,7 +8,7 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #A35C7A;
-            color: white;
+            color: #A35C7A;
             margin: 0;
             padding: 20px;
             text-align: center;
@@ -50,6 +50,9 @@
         }
         button:hover {
             background-color: #f5f5f5;
+        }
+        h1, h2, h3, p, strong {
+            color: #A35C7A;
         }
     </style>
 </head>
