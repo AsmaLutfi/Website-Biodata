@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multi Page Biodata</title>
+    <title>Website Pribadi</title>
     <style>
         body {
-            font-family: Little Summer, Arial, sans-serif;
+            font-family: Arial, sans-serif;
             background-color: #A35C7A;
             color: white;
             margin: 0;
@@ -21,7 +21,10 @@
             width: 80%;
             max-width: 500px;
             margin: auto;
-            color: #A35C7A;
+            display: none;
+        }
+        .active {
+            display: block;
         }
         img {
             width: 250px;
@@ -49,26 +52,18 @@
             background-color: #f5f5f5;
         }
     </style>
-    <script>
-        function showPage(pageId) {
-            document.querySelectorAll('.page').forEach(page => {
-                page.style.display = 'none';
-            });
-            document.getElementById(pageId).style.display = 'block';
-        }
-    </script>
 </head>
 <body>
-    <div class="container page" id="page1">
+    <div class="container active" id="page1">
         <h1>Welcome Raiders💫</h1>
         <h3>Enjoy your visit, hope you like it</h3>
         <img src="Welcome.jpg" alt="Welcome Image">
-        <button onclick="showPage('page2')">Next Page</button>
+        <button onclick="showPage(2)">Next Page</button>
     </div>
 
-    <div class="container page" id="page2" style="display:none;">
+    <div class="container" id="page2">
         <h2>📜Informasi Pribadi</h2>
-        <img src="Picture 1.jpeg" alt="Foto Profil">
+        <img src="Picture 1.jpeg" width="300" height="500" alt="Foto Profil">
         <p><strong>🧑 Nama:</strong> Asma Lutfi</p>
         <p><strong>📍 Tempat & tanggal lahir:</strong> Siwalempu, 07 Mei 2005</p>
         <p><strong>🏡 Alamat:</strong> Jl. Lengaru, Palu Timur</p>
@@ -76,28 +71,27 @@
         <p><strong>🍦 Makanan Favorit:</strong> Es Krim</p>
         <p><strong>🥤 Minuman Favorit:</strong> Susu Strawberry</p>
         <p><strong>🎶 Musik Favorit:</strong> Blessing Cover by TNF</p>
-        <button onclick="showPage('page3')">Next Page</button>
+        <button onclick="showPage(1)">Kembali</button>
+        <button onclick="showPage(3)">Next Page</button>
     </div>
 
-    <div class="floating-gallery">
-        <div class="image-container left">
-            <img src="Picture 3.jpeg" alt="Foto 1">
-            <p class="text">🌱Kesuksesan bukan tentang seberapa cepat kamu sampai, tapi seberapa konsisten kamu melangkah✨</p>
-        </div>
-        <div class="image-container right">
-            <img src="Picture 6.jpeg" alt="Foto 2">
-            <p class="text">🌟 "Jadilah perubahan yang ingin kamu lihat di dunia💖</p>
-        </div>
-    </div>
-
-    <div class="container page" id="page3" style="display:none;">
+    <div class="container" id="page3">
         <h2>🎓Pendidikan👩🏻‍🎓</h2>
         <img src="Universitas Tadulako.jpg" width="300" height="200" alt="Pendidikan">
         <p><strong>🏩 Universitas:</strong> Tadulako</p>
         <p><strong>🏢 Fakultas:</strong> Teknik</p>
         <p><strong>📚 Program Studi:</strong> S1 Sistem Informasi</p>
-        <button onclick="showPage('page1')">Halaman Utama</button>
-        <button onclick="showPage('page2')">Kembali ke Halaman 2</button>
+        <button onclick="showPage(2)">Kembali</button>
+        <button onclick="showPage(1)">Halaman Utama</button>
     </div>
+
+    <script>
+        function showPage(pageNumber) {
+            document.querySelectorAll('.container').forEach(container => {
+                container.classList.remove('active');
+            });
+            document.getElementById('page' + pageNumber).classList.add('active');
+        }
+    </script>
 </body>
 </html>
