@@ -64,7 +64,7 @@
         <h1>Welcome Raiders💫</h1>
         <h3>Enjoy your visit, hope you like it</h3>
         <img src="Welcome.jpg" alt="Welcome Image">
-        <button onclick="showPage(2)">Next Page</button>
+        <button onclick="window.location.href='Page2.html'">Next Page</button>
     </div>
 
     <div class="container" id="page2">
@@ -77,8 +77,8 @@
         <p><strong>🍦 Makanan Favorit:</strong> Es Krim</p>
         <p><strong>🥤 Minuman Favorit:</strong> Susu Strawberry</p>
         <p><strong>🎶 Musik Favorit:</strong> Blessing Cover by TNF</p>
-        <button onclick="showPage(1)">Kembali</button>
-        <button onclick="showPage(3)">Next Page</button>
+        <button onclick="window.location.href='Page1.html'">Kembali</button>
+        <button onclick="window.location.href='Page3.html'">Next Page</button>
     </div>
 
     <div class="container" id="page3">
@@ -87,8 +87,8 @@
         <p><strong>🏩 Universitas:</strong> Tadulako</p>
         <p><strong>🏢 Fakultas:</strong> Teknik</p>
         <p><strong>📚 Program Studi:</strong> S1 Sistem Informasi</p>
-        <button onclick="showPage(2)">Kembali</button>
-        <button onclick="showPage(1)">Halaman Utama</button>
+        <button onclick="window.location.href='Page2.html'">Kembali</button>
+        <button onclick="window.location.href='Page1.html'">Halaman Utama</button>
     </div>
 
     <script>
