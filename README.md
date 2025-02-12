@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Utama</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #A35C7A;
+            color: white;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            background-color: #FFCCE1;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 500px;
+            margin: auto;
+        }
+        img {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border: 3px solid white;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+        button {
+            background-color: white;
+            color: #A35C7A;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            display: block;
+            margin: 20px auto;
+        }
+        button:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome Raiders💫</h1>
+        <h3>Enjoy your visit, hope you like it</h3>
+        <img src="Welcome.jpg" alt="Welcome Image">
+        <button onclick="window.location.href='Biodata_Page2.html'">Next Page</button>
+    </div>
+</body>
+</html>
