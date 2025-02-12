@@ -70,7 +70,7 @@
     <!-- Halaman Biodata -->
     <div class="container page" id="biodata" style="display: none;">
         <h2>📜Informasi Pribadi</h2>
-        <img src="Picture1.jpeg" width="250" alt="Foto Profil">
+        <img src="Picture 1.jpeg" width="250" alt="Foto Profil">
         <p><strong>🧑 Nama:</strong> Asma Lutfi</p>
         <p><strong>📍 Tempat & tanggal lahir:</strong> Siwalempu, 07 Mei 2005</p>
         <p><strong>🏡 Alamat:</strong> Jl. Lengaru, Palu Timur</p>
