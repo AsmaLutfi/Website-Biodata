@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Utama</title>
+    <title>Website Pribadi</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -48,13 +48,46 @@
             background-color: #f5f5f5;
         }
     </style>
+    <script>
+        function showPage(pageId) {
+            let pages = document.getElementsByClassName("page");
+            for (let page of pages) {
+                page.style.display = "none";
+            }
+            document.getElementById(pageId).style.display = "block";
+        }
+    </script>
 </head>
 <body>
-    <div class="container">
+    <!-- Halaman Utama -->
+    <div class="container page" id="home">
         <h1>Welcome Raiders💫</h1>
         <h3>Enjoy your visit, hope you like it</h3>
         <img src="Welcome.jpg" alt="Welcome Image">
-        <button onclick="window.location.href='Biodata_Page2.html'">Next Page</button>
+        <button onclick="showPage('biodata')">Next Page</button>
+    </div>
+
+    <!-- Halaman Biodata -->
+    <div class="container page" id="biodata" style="display: none;">
+        <h2>📜Informasi Pribadi</h2>
+        <img src="Picture1.jpeg" width="250" alt="Foto Profil">
+        <p><strong>🧑 Nama:</strong> Asma Lutfi</p>
+        <p><strong>📍 Tempat & tanggal lahir:</strong> Siwalempu, 07 Mei 2005</p>
+        <p><strong>🏡 Alamat:</strong> Jl. Lengaru, Palu Timur</p>
+        <p><strong>🎮 Hobi:</strong> Gaming and Reading</p>
+        <button onclick="showPage('pendidikan')">Next Page</button>
+        <button onclick="showPage('home')">Halaman Utama</button>
+    </div>
+
+    <!-- Halaman Pendidikan -->
+    <div class="container page" id="pendidikan" style="display: none;">
+        <h2>🎓Pendidikan👩🏻‍🎓</h2>
+        <img src="Universitas Tadulako.jpg" width="300" height="200" alt="Pendidikan">
+        <p><strong>🏩 Universitas:</strong> Tadulako</p>
+        <p><strong>🏢 Fakultas:</strong> Teknik</p>
+        <p><strong>📚 Program Studi:</strong> S1 Sistem Informasi</p>
+        <button onclick="showPage('biodata')">Kembali ke Halaman 2</button>
+        <button onclick="showPage('home')">Halaman Utama</button>
     </div>
 </body>
 </html>
