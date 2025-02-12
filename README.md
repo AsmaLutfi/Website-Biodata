@@ -10,8 +10,12 @@
             background-color: #A35C7A;
             color: #A35C7A;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             text-align: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .container {
             background-color: #FFCCE1;
@@ -20,7 +24,6 @@
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
             width: 80%;
             max-width: 500px;
-            margin: auto;
             display: none;
         }
         .active {
